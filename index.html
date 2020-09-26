@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-    <div class="menu">
+<!-- This is a Semantic HTML Change -->
+    <section>
+    <div class="menu" id="top">
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
     </div>
-
+</section>
     <div class="hero">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
+        <!-- This is an SEO Change -->
+        <header>
+            <h3>
+                A smart solution to manage your money
+            </h3>
+        </header>
     </div>
 
     <div class="container center">
@@ -94,12 +101,18 @@
         </div>
 
     </div>
+    <!-- This is an A11y Change -->
+    <div>
+        <a class="top" href="#top">
+        Go back to top
+        </a>
+    </div>
 
     <div class="bottom">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
     </div>
-
+    
 </body>
 </html>
