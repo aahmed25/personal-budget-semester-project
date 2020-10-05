@@ -20,5 +20,6 @@
   "homepage": "https://github.com/aahmed25/personal-budget#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
