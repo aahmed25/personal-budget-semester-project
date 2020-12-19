@@ -1,110 +1,74 @@
-* {
-    box-sizing: border-box;
+.maintitle a{
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
 }
-
-body {
-    font-size: 10px;
-    font-family: Tahoma, Arial;
+.navigation{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	
 }
-
-div.menu {
-    width: 100%;
-    background-color: #4d5791;
-    height: 44px;
-    padding: 0 40px;
+.navigation a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
-
-div.menu ul,
-div.menu ul li {
-    margin: 0;
-    padding: 0 ;
-    list-style: none;
-    display: inline-block;
+.navigation a.active{
+	background-color: #111;
 }
-
-div.menu ul li a {
+body{
+	background-color: lightgray;
+	width: 100%;
+}
+.title{
+	font-size:40px;
+}
+.about{
+	font-size: 20px;
+	text-align:center;
+}
+.standard{
+	font-size:25px;
+	text-align:center;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.button {
     display: block;
-    padding: 0 20px;
-    line-height: 44px;
-    font-size: 1.4em;
-    text-decoration: none;
-    color: #fff;
-    margin: 0;
-}
-
-div.menu ul li a:hover  {
-    background-color: white;
-    color: #4d5791;
-}
-
-div.hero {
-    height: 350px;
-    background-color: #b4c6f0;
-    background-image: url('bg.png');
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    padding-top: 40px;
-}
-
-div.hero h1,
-div.hero h2 {
+    width: 500px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
     text-align: center;
-    margin: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
 }
+.form{
+	border-radius: 4px;
 
-div.hero h1 {
-    color: #fff;
-    font-size: 4.2em;
-    margin-bottom: 20px;
+	padding: 20px;
+	text-align: left;
+	list-style-type: none;
 }
-
-div.hero h2 {
-    color: #4d5791;
+form{
+	display: block;
+	margin-top: 0em;
 }
-div.hero h3 {
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
+.service{
+	font-size: 25px;
+	text-align:left;
 }
-.container {
-    padding: 40px;
-    width: 100%;
-}
-
-.page-area {
-    max-width: 768px;
-    display: inline-block;
-}
-
-.bottom {
-    height: 50px;
-    background-color: #b4c6f0;
-    padding: 40px;
-}
-
-.center {
-    text-align: center;
-}
-
-.container div.text-box {
-    display: inline-block;
-    width: 100%;
-    max-width: 340px;
-    text-align: justify;
-    margin: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .container .div.text-box {
-        margin: 10px;
-    }
-}
-.top {
-    position: relative;
-    transform: translateY(80%);
-   color: rgb(22, 109, 90);
-   left: 42%;
-   text-decoration: none;
-   font-size: 25px;
-  }
