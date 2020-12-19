@@ -35,30 +35,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
    
-   <script>
+    <script>
         var dataSource = {
             datasets: [
                 {
-                    data: [],
+                    data: [30,55,44,180,120, 350, 90],
                     backgroundColor: [
-                         '#ffcd56',
-                         '#ff6384',
-                         '#36a2eb',
-                         '#fd6b19',
-                         '#D8E819',
-                         '#8119E8',
-                         '#1932E8',
+                        '#ffcd56',
+                        '#ff6384',
+                        '#36a2eb',
+                        '#fd6b19',
+                        '#D8E819',
+                        '#8119E8',
+                        '#1932E8',
                     ],
                 }
             ],
             labels: [
-                 'Eat out',
-                 'Rent',
-                 'Groceries',
-            'Phone',
-                 'Insurance',
-                 'Car',
-                 'Bills',
+                'Eat out',
+                'Rent',
+                'Groceries',
+                'Phone',
+                'Insurance',
+                'Car',
+                'Bills',
             ]
         };
 
@@ -66,24 +66,13 @@
             var ctx = document.getElementById("myChart").getContext("2d");
             var myPieChart = new Chart(ctx, {
                 type: 'pie',
-                data: dataSource,
-                options:{  maintainAspectRatio: false}
+                data: dataSource
             });
         }
 
-        function getBudget() {
-            axios.get('./budget')
-            .then(function(res){
-                console.log(res);
-                for(var i=0; i < res.data.length; i++){
-                    dataSource.labels[i] = res.data[i].title;
-                    dataSource.datasets[0].data[i] = res.data[i].value;
-                    dataSource.datasets[0].backgroundColor[i] = res.data[i].color;
-                }
+      
                 createChart();
-            });
-        }
-        getBudget();
+        
         
     </script>
 </body>
